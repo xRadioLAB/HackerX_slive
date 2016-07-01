@@ -1,0 +1,51 @@
+{
+    "name": "XHNA_2016",
+    "version": "2.0.0",
+    "description": "XinHua News Agency Homepage 2016",
+    "organization": "XINHUANET CO,.LTD Xinhua Radio Labs",
+    "author": {
+        "name": "Superwoods",
+        "email": "st_sister@icloud.com",
+        "url": "https://github.com/xinhuaRadioLAB"
+    },
+    "homepage": "http://203.192.6.89/xhs/index.htm",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xinhuaRadioLAB/8855xinhuaNewsAgency.git"
+    },
+    "bugs": "https://github.com/xinhuaRadioLAB/8855xinhuaNewsAgency/issues",
+    "github": "https://github.com/xinhuaRadioLAB/8855xinhuaNewsAgency",
+    "main": "index.html",
+    "readme": "README",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "edp": {
+        "wwwroot": "/",
+        "depDir": "dep",
+        "srcDir": "src",
+        "loaderAutoConfig": "js,htm,html,tpl,vm,phtml",
+        "loaderUrl": "http://s1.bdstatic.com/r/www/cache/ecom/esl/1-8-2/esl.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "*",
+        "postcss-cli": "*",
+        "postcss-import": "*",
+        "grunt": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-uglify": "*",
+        "load-grunt-tasks": "*",
+        "grunt-contrib-cssmin": "*",
+        "express": "*",
+        "ejs": "*",
+        "browser-sync": "*"
+    },
+    "dependencies": {
+        "gsap": "^1.18.5",
+        "jquery": "^1.12.4",
+        "normalize.css": "^4.1.1",
+        "perfect-scrollbar": "^0.6.11",
+        "scrollmagic": "^2.0.5"
+    }
+}
