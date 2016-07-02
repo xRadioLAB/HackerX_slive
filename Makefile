@@ -10,7 +10,7 @@ js:
 
 .PHONY: server
 server:
-	browser-sync start --server --files='index.html, js/index.js, css/index.css'
+	browser-sync start --server --files='templates/index.html, static/js/index.js'
 
 .PHONY: clean
 clean:

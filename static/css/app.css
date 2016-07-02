@@ -3,7 +3,7 @@ body, html {
     width: 100%;
     height: 100%;
 }
-body, div, span, a, img, h1, h2, h3, h4, h5 {
+/*body, div, span, a, img, h1, h2, h3, h4, h5 {
     box-sizing: border-box;
     position: relative;
     display: flex;
@@ -15,12 +15,11 @@ body, div, span, a, img, h1, h2, h3, h4, h5 {
     margin: 0;
     padding: 0;
     position: relative;
-    /* transition */
     -moz-transition: all 2s;
     -webkit-transition: all 2s;
     -o-transition: all 2s;
     transition: all 2s;
-}
+}*/
 body {
     color: #202020;
     font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
