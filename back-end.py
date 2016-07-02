@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, render_template, request
 from flask_socketio import SocketIO
 
@@ -5,15 +6,20 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
+NAMES = ['悦悦', '小郝', '木木', 'John', 'lxvc']
+
 
 @app.route('/')
 def index():
     text = request.args.get('text', '')
     if text:
-        socketio.emit('slack', {'name': text}, namespace='/socket/')
-        return text + ' +1'
+        if text in NAMES:
+            socketio.emit('slack', {'name': text}, namespace='/socket/')
+            return text + ' +1'
+        else:
+            return '这个人去火星了~'
     else:
-        socketio.emit('slack', {'ok': True}, namespace='/socket/')
+        # socketio.emit('slack', {'ok': True}, namespace='/socket/')
         return 'Hello,World!'
 
 

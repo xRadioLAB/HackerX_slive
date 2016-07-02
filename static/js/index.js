@@ -10,7 +10,7 @@ var option = {
         data: ['票票']
     },
     xAxis: {
-        data: ["悦悦", "小郝", "木木", "John", "LVC"]
+        data: ["悦悦", "小郝", "木木", "John", "lxvc"]
     },
     yAxis: {},
     series: [{
