@@ -141,7 +141,7 @@ function addEventHandlerToDocument() {
 
 // data
 (function data() {
-    var dev = true;
+    var dev = false;
     var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
     var socket = io.connect(sever);
     socket.on('slack', function(data) {
@@ -150,13 +150,20 @@ function addEventHandlerToDocument() {
 })();
 
 function dataCallback(data) {
-    showNotification(data.ok);
+    showNotification(data.name);
     console.log(data);
 }
 
-
 $(function() {
     // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
+    // myChart.setOption(option);
+    var condition = 'localStorge';
+    if (condition === 'localStorge') {
+        myChart.setOption(option);
+    }
+
+
+
+
 
 });
