@@ -10,7 +10,7 @@ socketio = SocketIO(app)
 def index():
     text = request.args.get('text', '')
     if text:
-        socketio.emit('slack', {'ok': text}, namespace='/socket/')
+        socketio.emit('slack', {'name': text}, namespace='/socket/')
         return text + ' +1'
     else:
         socketio.emit('slack', {'ok': True}, namespace='/socket/')
@@ -23,7 +23,7 @@ def vote():
 
 
 if __name__ == '__main__':
-    dev = True
+    dev = False
     if dev:
         host = '127.0.0.1'
     else:

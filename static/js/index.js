@@ -141,7 +141,7 @@ function addEventHandlerToDocument() {
 
 // data
 (function data() {
-    var dev = true;
+    var dev = false;
     var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
     var socket = io.connect(sever);
     socket.on('slack', function(data) {
