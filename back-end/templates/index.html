@@ -1,19 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Vote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../static/app.css">
 </head>
+
 <body>
-<h1>ws</h1>
-<script src="../static/socket.io.js"></script>
-<script type="text/javascript" charset="utf-8">
-    var dev = false;
-    var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
-    var socket = io.connect(sever);
-    socket.on('slack', function (data) {
-        console.log(data)
-    })
-</script>
+    <div id="app">
+        app
+    </div>
+    <div id="text">
+        this is text
+    </div>
+    <!-- <button onclick="registerActiveViewChanged()">点我</button> -->
+
+    <script src="../static/jq.js"></script>
+    <script src="../static/echarts-all.js"></script>
+    <script src="../static/socket.io.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <!-- <script src="/PowerPointWebAddIn/PowerPointWebAddInWeb/Home/Home.js"></script> -->
+    <script src="../static/index.js"></script>
 </body>
+
 </html>
