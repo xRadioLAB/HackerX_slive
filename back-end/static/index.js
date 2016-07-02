@@ -1,6 +1,5 @@
 // @St. 2016-07-02-17.41
 "use strict";
-
 var myChart = echarts.init(document.getElementById('app'));
 var option = {
     title: {
@@ -21,11 +20,9 @@ var option = {
     }]
 };
 
-
-
 // var messageBanner;
 var Globals = {
-    activeViewHandler:null,
+    activeViewHandler: null,
 };
 var $text = $("#text");
 
@@ -68,11 +65,10 @@ var $text = $("#text");
 // }
 //
 function getCurrentSlide() {
-    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function (asyncResult) {
+    Office.context.document.getSelectedDataAsync(Office.CoercionType.SlideRange, function(asyncResult) {
         if (asyncResult.status == "failed") {
             showNotification('Error:', "Action failed with error: " + asyncResult.error.message);
-        }
-        else {
+        } else {
             var firstSlideId = asyncResult.value.slides[0].id;
             showNotification('<br>ID:', JSON.stringify(asyncResult.value));
         }
@@ -108,16 +104,15 @@ function showNotification(text, content) {
 
 function registerActiveViewChanged() {
 
-    Globals.activeViewHandler = function (args) {
+    Globals.activeViewHandler = function(args) {
         showNotification('1: ' + JSON.stringify(args))
     };
 
     Office.context.document.addHandlerAsync(Office.EventType.ActiveViewChanged, Globals.activeViewHandler,
-        function (asyncResult) {
+        function(asyncResult) {
             if (asyncResult.status == "failed") {
                 showNotification('2:' + asyncResult.error.message);
-            }
-            else {
+            } else {
                 showNotification('3:' + asyncResult.status);
             }
         });
@@ -132,20 +127,35 @@ function addEventHandlerToDocument() {
 //     getCurrentSlide()
 // }
 
-OfficeInit();
-
+// OfficeInit();
 function OfficeInit() {
-    Office.initialize = function (reason) {
+    Office.initialize = function(reason) {
         // $('#app').after(reason);
         console.log(reason);
-        $(function(){
+        $(function() {
             registerActiveViewChanged();
             addEventHandlerToDocument();
         });
     };
 }
 
-$(function(){
+// data
+(function data() {
+    var dev = false;
+    var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
+    var socket = io.connect(sever);
+    socket.on('slack', function(data) {
+        dataCallback(data);
+    })
+})();
+
+function dataCallback(data) {
+    showNotification(data.ok);
+    console.log(data);
+}
+
+
+$(function() {
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 
