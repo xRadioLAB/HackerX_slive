@@ -13,7 +13,7 @@ exports.output = path.resolve(__dirname, 'output');
 // var moduleEntries = 'html,htm,phtml,tpl,vm,js';
 // var pageEntries = 'html,htm,phtml,tpl,vm';
 
-exports.getProcessors = function () {
+exports.getProcessors = function() {
     var lessProcessor = new LessCompiler();
     var cssProcessor = new CssCompressor();
     var moduleProcessor = new ModuleCompiler();
@@ -61,7 +61,7 @@ exports.exclude = [
 ];
 
 /* eslint-disable guard-for-in */
-exports.injectProcessor = function (processors) {
+exports.injectProcessor = function(processors) {
     for (var key in processors) {
         global[key] = processors[key];
     }

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/logo.png">
+    <!-- <img class="logo" src="./assets/logo.png">
     <hello></hello>
+    <hello2></hello2>
+
     <p>
       Welcome to your Vue.js app!
     </p>
@@ -18,17 +20,16 @@
       You may also want to checkout
       <a href="https://github.com/vuejs/vue-router/" target="_blank">vue-router</a> for routing and
       <a href="https://github.com/vuejs/vuex/" target="_blank">vuex</a> for state management.
-    </p>
+    </p> -->
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
-
 export default {
-  components: {
-    Hello
-  }
+  // components: {
+  //   Hello,
+  //   Hello2
+  // }
 }
 </script>
 
