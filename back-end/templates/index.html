@@ -8,12 +8,11 @@
 <h1>ws</h1>
 <script src="../static/socket.io.js"></script>
 <script type="text/javascript" charset="utf-8">
-    var socket = io.connect('http://123.206.42.148:5000/test/');
-    socket.on('connect', function() {
-        socket.emit('message', {data: 'I\'m connected!'});
-    });
-    socket.on('response', function (data) {
-        console.log(data.data)
+    var dev = true;
+    var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
+    var socket = io.connect(sever);
+    socket.on('slack', function (data) {
+        console.log(data)
     })
 </script>
 </body>
