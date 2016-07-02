@@ -23,7 +23,7 @@ def vote():
 
 
 if __name__ == '__main__':
-    dev = False
+    dev = True
     if dev:
         host = '127.0.0.1'
     else:
