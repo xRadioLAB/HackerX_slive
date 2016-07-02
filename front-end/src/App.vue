@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    hello vue
     <!-- <img class="logo" src="./assets/logo.png">
     <hello></hello>
     <hello2></hello2>
@@ -25,11 +26,20 @@
 </template>
 
 <script>
+import
 export default {
-  // components: {
-  //   Hello,
-  //   Hello2
-  // }
+  components: {
+  },
+  ready () {
+      this.ws.onmessage = (msg) => {
+          console.log(msg)
+      }
+  },
+  data () {
+    return {
+      ws: new WebSocket('http://10.0.0.5:5000')
+    }
+  }
 }
 </script>
 
