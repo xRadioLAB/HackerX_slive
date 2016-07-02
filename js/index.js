@@ -1,21 +1,21 @@
 // @St. 2016-07-02-17.41
-var myChart = echarts.init(document.getElementById('main'));
+var myChart = echarts.init(document.getElementById('app'));
 var option = {
     title: {
-        text: 'ECharts 入门示例'
+        text: 'slive'
     },
     tooltip: {},
     legend: {
-        data: ['销量']
+        data: ['票票']
     },
     xAxis: {
-        data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+        data: ["悦悦", "小郝", "木木", "John", "LVC"]
     },
     yAxis: {},
     series: [{
-        name: '销量',
+        name: '票票',
         type: 'bar',
-        data: [5, 20, 36, 10, 10, 20]
+        data: [55, 20, 36, 88, 20]
     }]
 };
 

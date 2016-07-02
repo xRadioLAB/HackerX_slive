@@ -1,7 +1,7 @@
 .PHONY: css
 css:
 	mkdir -p bundle
-	postcss --watch --use autoprefixer --use postcss-import css/app.css --output bundle/app.css
+	postcss --watch --use autoprefixer --use postcss-import css/index.css --output bundle/index.css
 
 .PHONY: js
 js:
@@ -10,7 +10,7 @@ js:
 
 .PHONY: server
 server:
-	browser-sync start --server --files='index.html, bundle/app.css, js/app.js, build/app.js'
+	browser-sync start --server --files='index.html, js/index.js, css/index.css'
 
 .PHONY: clean
 clean:
