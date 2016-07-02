@@ -128,20 +128,20 @@ function addEventHandlerToDocument() {
 // }
 
 // OfficeInit();
-function OfficeInit() {
-    Office.initialize = function(reason) {
-        // $('#app').after(reason);
-        console.log(reason);
-        $(function() {
-            registerActiveViewChanged();
-            addEventHandlerToDocument();
-        });
-    };
-}
+// function OfficeInit() {
+//     Office.initialize = function(reason) {
+//         // $('#app').after(reason);
+//         console.log(reason);
+//         $(function() {
+//             registerActiveViewChanged();
+//             addEventHandlerToDocument();
+//         });
+//     };
+// }
 
 // data
 (function data() {
-    var dev = false;
+    var dev = true;
     var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
     var socket = io.connect(sever);
     socket.on('slack', function(data) {
