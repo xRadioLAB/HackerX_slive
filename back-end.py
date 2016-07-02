@@ -6,14 +6,14 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
-NAMES = ['悦悦', '小郝', '木木', 'John', 'lxvc']
+NAMES = [u'悦悦', u'小郝', u'木木', u'John', u'lxvc']
 
 
 @app.route('/')
 def index():
     text = request.args.get('text', '')
     if text:
-        if text in NAMES:
+        if unicode(text) in NAMES:
             socketio.emit('slack', {'name': text}, namespace='/socket/')
             return text + ' +1'
         else:
