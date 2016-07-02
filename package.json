@@ -1,44 +1,45 @@
 {
-    "name": "HackerX_task",
-    "version": "0.0.1",
-    "description": "HackerX_task",
-    "organization": "XINHUANET CO,.LTD Xinhua Radio Labs",
-    "author": {
-        "name": "Superwoods",
-        "email": "st_sister@icloud.com",
-        "url": "https://github.com/xinhuaRadioLAB"
-    },
-    "homepage": "http://203.192.6.89/xhs/index.htm",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/xinhuaRadioLAB/8855xinhuaNewsAgency.git"
-    },
-    "bugs": "https://github.com/xinhuaRadioLAB/HackerX_task/issues",
-    "github": "https://github.com/xinhuaRadioLAB/HackerX_task.git",
-    "license": "MIT",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "dependencies": {
-        "normalize.css": "^3.0.3",
-        "perfect-scrollbar": "^0.6.11"
-    },
-    "devDependencies": {
-        "autoprefixer": "^6.0.2",
-        "babel": "^6.5.2",
-        "babel-cli": "^6.10.1",
-        "babel-core": "^6.10.4",
-        "babel-loader": "^6.2.4",
-        "babel-preset-es2015": "^6.9.0",
-        "babel-preset-es2016": "^6.11.0",
-        "babel-preset-react": "^6.11.1",
-        "babel-preset-stage-0": "^6.5.0",
-        "browser-sync": "^2.9.3",
-        "clean-css": "^3.4.3",
-        "postcss-cli": "^2.1.0",
-        "postcss-import": "^7.0.0",
-        "react": "^15.1.0",
-        "webpack": "^1.13.1"
-    }
+  "name": "HackerX_slive",
+  "version": "0.0.1",
+  "description": "HackerX_slive",
+  "organization": "XINHUANET CO,.LTD Xinhua Radio Labs",
+  "author": {
+    "name": "Superwoods",
+    "email": "st_sister@icloud.com",
+    "url": "https://github.com/xinhuaRadioLAB"
+  },
+  "homepage": "https://github.com/xinhuaRadioLAB/HackerX_slive/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xinhuaRadioLAB/HackerX_slive/"
+  },
+  "bugs": "https://github.com/xinhuaRadioLAB/HackerX_slive/issues",
+  "github": "https://github.com/xinhuaRadioLAB/HackerX_slive.git",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "normalize.css": "^3.0.3",
+    "perfect-scrollbar": "^0.6.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.2",
+    "babel": "^6.5.2",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2016": "^6.11.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "browser-sync": "^2.9.3",
+    "clean-css": "^3.4.3",
+    "postcss-cli": "^2.1.0",
+    "postcss-import": "^7.0.0",
+    "react": "^15.1.0",
+    "socket.io": "^1.4.8",
+    "webpack": "^1.13.1"
+  }
 }
