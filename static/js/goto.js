@@ -1,21 +1,31 @@
 // @St. goto.js
 function goToSlideByIndex(status) {
-    var goToFirst = Office.Index.First;
-    var goToLast = Office.Index.Last;
-    var goToPrevious = Office.Index.Previous;
-    var goToNext = Office.Index.Next;
+    // var goToFirst = Office.Index.First;
+    // var goToLast = Office.Index.Last;
+    // var goToPrevious = Office.Index.Previous;
+    // var goToNext = Office.Index.Next;
     var active;
-    if (status === 'goToFirst') {
-        active = goToFirst;
-    }
-    if (status === 'goToLast') {
-        active = goToLast;
-    }
+
+    // var dev = false;
+    // var sever = dev ? 'http://127.0.0.1:5000/socket/' : 'http://123.206.42.148:5000/socket/';
+    // var socket = io.connect(sever);
+
+
+    // if (status === 'goToFirst') {
+    //     active = goToFirst;
+    // }
+    // if (status === 'goToLast') {
+    //     active = goToLast;
+    // }
     if (status === 'goToPrevious') {
-        active = goToPrevious;
+        active = Office.Index.Previous;
+        // socket.emit('previous');
     }
     if (status === 'goToNext') {
-        active = goToNext;
+        active = Office.Index.Next;
+        $.get('http://123.206.42.148:5000/flag/?action=next', function(result){
+            console.log('get:', result);
+        });
     }
     // Office.context.document.goToByIdAsync(active, Office.GoToType.Index, callback(asyncResult));
     Office.context.document.goToByIdAsync(active, Office.GoToType.Index);
