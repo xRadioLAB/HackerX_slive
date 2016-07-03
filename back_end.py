@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 from flask_socketio import SocketIO
+# import requests
 # from flask_sqlalchemy import SQLAlchemy
 # import os
 
@@ -55,15 +56,25 @@ def index():
             socketio.emit('slack', {'name': text}, namespace='/socket/')
             return text + ' +1'
         else:
-            return text + u'似乎去火星了呀~'
+            return u'『' + text + u'』' + u'同学似乎去火星了呀~'
     else:
-        return 'Hello,World!'
+        return 'Hello, World!'
 
 
 @app.route('/vote/')
 def vote():
     return render_template('index.html')
 
+
+@app.route('/goto/')
+def goto():
+    action = request.args.get('action', '')
+    print action
+    if action is 'next':
+        socketio.emit('next', namespace="/socket/")
+    elif action is 'previous':
+        socketio.emit('previous', namespace="/socket/")
+    return render_template('goto.html')
 
 if __name__ == '__main__':
     # db.create_all()
