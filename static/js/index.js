@@ -17,7 +17,7 @@ $(function() {
         },
         yAxis: {},
         series: [{
-            name: '票票',
+            name: 'vote',
             type: 'bar',
             data: [0, 0, 0, 0, 0]
         }]

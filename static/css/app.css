@@ -24,6 +24,7 @@ body {
     color: #202020;
     font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 100;
+    font-size: 14px;
     /*background-image: url('../img/bg.jpg');
     background-position: right bottom;
     background-repeat: no-repeat;
@@ -49,6 +50,6 @@ a {
 }
 /* ------------------------------------------------------- hey we go!!! */
 #app {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 400px;
 }
