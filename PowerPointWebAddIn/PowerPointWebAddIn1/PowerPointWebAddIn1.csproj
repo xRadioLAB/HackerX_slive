@@ -4,21 +4,21 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{42544CE2-ECBC-4D14-8CC0-C16157D14C51}</ProjectGuid>
+    <ProjectGuid>{53724720-E8D9-46DC-B198-A787EBB9193A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PowerPointWebAddIn</RootNamespace>
-    <AssemblyName>PowerPointWebAddIn</AssemblyName>
+    <RootNamespace>PowerPointWebAddIn1</RootNamespace>
+    <AssemblyName>PowerPointWebAddIn1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetOfficeVersion>15.0</TargetOfficeVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
-    <AppFeaturePartId>{10eb2ade-a1f3-46a5-ada8-7959e5deecbf}</AppFeaturePartId>
-    <WspPartId>{2094c350-53a9-4c6a-9f66-ff76322a6ec4}</WspPartId>
-    <WorkflowPartId>{e678102a-2ed0-4cc5-a2c4-51791d0a360f}</WorkflowPartId>
-    <CspkgPartId>{f5202b88-88b3-458f-a41a-1737e96c46eb}</CspkgPartId>
-    <SqlPackagePartId>{f95d30c4-e0cd-47a1-930a-db298a5e645b}</SqlPackagePartId>
+    <AppFeaturePartId>{0f0fca04-b012-4dcf-a879-e8bf532233fa}</AppFeaturePartId>
+    <WspPartId>{1751d127-0c4b-4c00-a6ed-c0240098f4dd}</WspPartId>
+    <WorkflowPartId>{7a5f6f9c-d0f1-4b93-9758-3f7ccc2158d4}</WorkflowPartId>
+    <CspkgPartId>{e5b8c189-0326-4aee-9146-51cdb37a5257}</CspkgPartId>
+    <SqlPackagePartId>{7afbae5c-5b04-48e9-8f8a-03b97bf30e99}</SqlPackagePartId>
     <ProjectMode>OfficeApp</ProjectMode>
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <MinimumOfficeToolsVersion>14.0</MinimumOfficeToolsVersion>
@@ -43,10 +43,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="PowerPointWebAddInManifest\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{fa77a361-c767-4bb9-a296-c467d7ce72aa}</SharePointProjectItemId>
+    <None Include="PowerPointWebAddIn1Manifest\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56daa3f8-98b4-4c6d-9e04-63904fa84548}</SharePointProjectItemId>
     </None>
-    <Content Include="PowerPointWebAddInManifest\PowerPointWebAddIn.xml">
+    <Content Include="PowerPointWebAddIn1Manifest\PowerPointWebAddIn1.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
       <SubType>Designer</SubType>
     </Content>
