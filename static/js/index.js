@@ -6,18 +6,18 @@ $(function() {
     var myChart = echarts.init(document.getElementById('app'));
     var option = {
         title: {
-            text: 'slive vote'
+            text: '谁长得最帅'
         },
         tooltip: {},
         legend: {
-            data: ['vote']
+            data: ['颜值数']
         },
         xAxis: {
             data: ["悦悦", "小郝", "木木", "John", "lxvc"]
         },
         yAxis: {},
         series: [{
-            name: 'vote',
+            name: '颜值数',
             type: 'bar',
             data: [0, 0, 0, 0, 0]
         }]

@@ -55,9 +55,9 @@ a {
 /* ------------------------------------------------------- hey we go!!! */
 
 #app {
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    margin: 50px auto;
 }
 .btn {
     box-sizing: border-box;
@@ -71,6 +71,7 @@ a {
     margin: 0;
     padding: 0;
     position: relative;
+    margin-top: 100px;
 }
 .title {
     text-align: center;
@@ -80,7 +81,7 @@ button {
     height: 80px;
     line-height: 80px;
     font-size: 32px;
-    margin: 5% auto;
+    margin: 30px auto;
     border-radius: 20px;
     color: #FFF;
 }
