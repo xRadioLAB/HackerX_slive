@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, render_template, request, session
 from flask_socketio import SocketIO
-# import requests
+import requests
+import json
 # from flask_sqlalchemy import SQLAlchemy
 # import os
 
@@ -14,7 +15,7 @@ socketio = SocketIO(app)
 # db = SQLAlchemy(app)
 
 NAMES = [u'悦悦', u'小郝', u'木木', u'John', u'lxvc']
-
+Slack_url = 'https://hooks.slack.com/services/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'
 
 # class Voter(db.Model):
 #     __tablename__ = 'voters'
@@ -75,6 +76,22 @@ def goto():
     elif action is 'previous':
         socketio.emit('previous', namespace="/socket/")
     return render_template('goto.html')
+
+@app.route('/flag/')
+def flag():
+    action = request.args.get('action', '')
+    if 'flag' in session:
+        flag = session.get('flag')
+        if action == 'next':
+            flag += 1
+        elif action == 'previous' and flag > 1:
+            flag -= 1
+        session['flag'] = flag
+    else:
+        session['flag'] = 1
+    if session['flag'] is 10:
+        requests.post(Slack_url, data=json.dumps({'username':u'五轴飞行器','text':u'欢迎 star: https://github.com/xinhuaRadioLAB/HackerX_slive'}))
+    return 'vc'
 
 if __name__ == '__main__':
     # db.create_all()
