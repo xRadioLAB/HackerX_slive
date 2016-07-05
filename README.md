@@ -18,7 +18,9 @@ If one of them is chosen, the **Polling Addin** will update real time:
 *Audience* can also use **/v Command** to vote:
 
 ![Polling_cmdline](Docs/Polling_cmdline.png)
+
 ![Polling_good](Docs/Polling_good.png)
+
 ![Polling_bad](Docs/Polling_bad.png)
 
 ## **Navigate Slides**
