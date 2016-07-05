@@ -10,7 +10,7 @@
     <script src="../static/js/jq.js"></script>
     <script src="../static/js/socket.io.js"></script>
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
-    <script src="../static/js/goto.js"></script>
+    <script src="../static/js/goto.min.js"></script>
 </head>
 
 <body>
@@ -18,11 +18,10 @@
         <h3 class="title">
             点击按钮控制PPT
         </h3>
-        <!-- <button onclick="goToSlideByIndex('goToFirst')">首 页</button> -->
         <button onclick="goToSlideByIndex('goToPrevious')">上一页</button>
         <button onclick="goToSlideByIndex('goToNext')">下一页</button>
-        <!-- <button onclick="goToSlideByIndex('goToLast')">尾 页</button> -->
     </div>
+    <center>Tips: 这个页面必须嵌入需要遥控的PPT中</center>
 </body>
 
 </html>
