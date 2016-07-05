@@ -1,6 +1,6 @@
 /**
  * Copyright (c) 2016 Team Quincopter
  * Slive
- * @time 2016-07-05-11.51.53
+ * @time 2016-07-05-15.25.47
  */
 body,h1,h2,h3{font-weight:100}body,html{width:100%;height:100%}body{color:#202020;font-family:"Avenir Next",HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:14px}h1{font-size:64px}h2{font-size:48px}h3{font-size:24px}p{font-size:16px}a{font-weight:400}#app{width:1000px;height:600px;margin:50px auto}.btn{box-sizing:border-box;display:flex;flex-direction:column;align-items:stretch;flex-shrink:0;align-content:flex-start;border:0 solid #000;margin:100px 0 0;padding:0;position:relative}.title{text-align:center}button{width:90%;height:80px;line-height:80px;font-size:32px;margin:30px auto;border-radius:20px;color:#FFF}button:nth-child(2){background-color:#f19ec2}button:nth-child(3){background-color:#8957a1}button:nth-child(4){background-color:#5f52a0}button:nth-child(5){background-color:#440062}
