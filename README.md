@@ -1,6 +1,6 @@
 # Slive
 
-- A Project by **_Team 五轴飞行器_** built in **CareerX-HackerX Hackathon**.
+- A Project by **_Team 五轴飞行器 (Quincopter)_** built in **CareerX-HackerX Hackathon**.
 - A **Slack Bot**, designed to assist *Speaker*s in *Group meetings*.
 
 ## **Polling**
