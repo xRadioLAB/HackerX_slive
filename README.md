@@ -43,7 +43,7 @@ Features:
 - Unmanly Push
 - Sync with your Slide
 
-## **API Contrasts** during the Hackathon
+## **API Constraints** during the Hackathon
 
 - **Slack Fallback Host** requires *HTTPS*
 - **Office Addin Page** requires *HTTPS*
